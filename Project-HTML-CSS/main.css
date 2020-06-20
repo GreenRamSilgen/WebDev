@@ -1,3 +1,4 @@
+/*NavBar CSS*/
 #top-header{
     display: flex;
     width: auto;
@@ -26,6 +27,49 @@
     padding: 1em;
     color:#000;
     opacity: 0.75;
+}
+
+
+/*Main Content CSS*/
+#main-content{
+  text-align: center; 
+  margin-top: 8%;
+}
+#search-bar{
+  padding: 10px;
+}
+
+#searchInput{
+  height: 44px;
+  width: 450px;
+  border-style: none;
+}
+#inner-search-bar{
+  border: 1px solid #dfe1e5;
+  margin: auto;
+  width: 550px;
+  border-radius: 40px;
+}
+#inner-search-bar:hover{
+  box-shadow: #dfe1e5 0px 0px 10px;
+}
+.basic-button{
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f2f2f2;
+  color: #5F6368;
+  margin: 10px; 
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+}
+
+.basic-button:hover{
+  background-color: #f7f7f7;
+  border: 1px solid #dfe1e5;
+  color: black;
 }
 
 a:link {
