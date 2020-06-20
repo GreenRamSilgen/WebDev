@@ -1,0 +1,45 @@
+#top-header{
+    display: flex;
+    width: auto;
+    height: 56px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-left{
+    width: fit-content;
+    align-items: center;
+}
+
+#header-right{  
+    margin: 2em;
+    width: fit-content;
+}
+#profile-circle{
+    padding: 10px 13px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.header-out-links{
+    padding: 1em;
+    color:#000;
+    opacity: 0.75;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
