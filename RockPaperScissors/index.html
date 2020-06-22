@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RPS</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    function computerPlay()
+    {
+        switch(Math.floor(Math.random() * 3) + 1)
+        {
+            case 1:
+                return "Rock";
+                break;
+            case 2:
+                return "Paper";
+                break;
+            case 3:
+                return "Scissor";
+                break;
+            default:
+                return "Fail";
+        }
+        
+    }
+
+    function playRound(playerSelection, computerSelection)
+    {
+        if(playerSelection == null)
+        {
+            return "???";
+        }
+        if(playerSelection.toLowerCase() == computerSelection.toLowerCase())
+        {
+            return "Tie!";
+        }
+        else if(playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "paper")
+        {
+            return "You Lose! Paper beats Rock.";
+        }
+        else if(playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "scissor")
+        {
+            return "You Win! Rock beats Scissor.";
+        }
+        else if(playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "rock")
+        {
+            return "You Win! Paper beats Rock.";
+        }
+        else if(playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "scissor")
+        {
+            return "You Lose! Scissor beats Paper.";
+        }
+        else if(playerSelection.toLowerCase() == "scissor" && computerSelection.toLowerCase() == "rock")
+        {
+            return "You Lose! Rock beats Scissor.";
+        }
+        else if(playerSelection.toLowerCase() == "scissor" && computerSelection.toLowerCase() == "paper")
+        {
+            return "You Win! Scissor beats Paper.";
+        }
+        else
+        {
+            return "Something went wrong... Player Played: " + playerSelection + " ComputerPlayed: " + computerSelection;
+        }
+    }
+    
+    function game()
+    {
+        let playerWin = 0;
+        let compWin = 0;
+        let playTime = 0;
+        while(playTime < 5)
+        {
+            let decision = playRound(prompt("Rock, Paper or Scissor?"), computerPlay());
+            if(decision.charAt(4) == 'W')
+            {
+                playerWin++;
+            }
+            else if(decision.charAt(4) == 'L')
+            {
+                compWin++;
+            }
+            else{
+                
+            }
+            playTime++;
+            console.log("This Round: \n " + decision);
+            console.log("Player Wins: " + playerWin + " ||| Computer Wins: " + compWin);
+        }
+    }
+    
+    game();
+  </script>
+</body>
+</html>
