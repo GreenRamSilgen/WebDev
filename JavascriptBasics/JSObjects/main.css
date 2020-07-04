@@ -1,0 +1,10 @@
+.card {
+    height: 200px;
+    width: 175px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.card-title {}
+
+.card-author {}
