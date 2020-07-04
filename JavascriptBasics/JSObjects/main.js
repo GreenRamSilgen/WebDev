@@ -1,4 +1,6 @@
 const display = document.querySelector("#card-holder");
+const popUpDisplay = document.querySelector(".bg-modal");
+let popped = false;
 let myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -40,4 +42,18 @@ function makeElement(elementType, content) {
     let Element = document.createElement(elementType);
     Element.textContent = content;
     return Element;
+}
+
+
+//POP UP CONTROLS
+function popUp(){
+    if(popped == true)
+    {
+        popUpDisplay.style.display = 'none';
+        popped = false;
+    }
+    else{
+        popUpDisplay.style.display = 'flex';
+        popped = true;
+    }
 }

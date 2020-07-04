@@ -10,10 +10,25 @@
   <h1>
     Open Console
   </h1>
+  <button onclick="popUp()">NEW BOOK</button>
   <div id="card-holder">
   <div class="card">
     <h2 class="card-title">Title</h2>
     <h3 class="card-author">Author</h3>
+  </div>
+</div>
+<!-- Modal Section-->
+<div class="bg-modal">
+  <div class="modal-content">
+    <div class="close" onclick="popUp()">+</div>
+    <form action="" id="userInput">
+      <legend style="text-align: center;">Enter New Book Info</legend>
+      <input type="text" placeholder="Title">
+      <input type="text" placeholder="Author">
+      <input type="text" placeholder="Pages">
+      <input type="text" placeholder="Read?">
+      <button type="submit">Submit</button>
+    </form>
   </div>
 </div>
 <script src="main.js" type="text/javascript"></script>
