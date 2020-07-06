@@ -14,7 +14,6 @@ function Book(title="No Title", author="No Author", pages=0, read=false) {
     };
 }
 
-
 //Adds book to library/ Array
 function addBookToLibrary(book) {
     myLibrary.push(book);
